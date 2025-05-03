@@ -92,7 +92,7 @@ function Login() {
         </button>
         
         <p className="switch-mode">
-          {isLogin ? "Don't have an account?" : "Already have an account?"}
+          {isLogin ? "Sign Up Here!" : "Log In Here"}
           <button
             onClick={() => setIsLogin(!isLogin)}
             disabled={loading}
