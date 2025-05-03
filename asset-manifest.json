@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.2603877e.css",
-    "main.js": "/repository-name/static/js/main.c1f0726c.js",
-    "index.html": "/repository-name/index.html",
-    "main.2603877e.css.map": "/repository-name/static/css/main.2603877e.css.map",
-    "main.c1f0726c.js.map": "/repository-name/static/js/main.c1f0726c.js.map"
+    "main.css": "/CPSC-349---Tuffy-Music/static/css/main.2603877e.css",
+    "main.js": "/CPSC-349---Tuffy-Music/static/js/main.cbbeb4ce.js",
+    "index.html": "/CPSC-349---Tuffy-Music/index.html",
+    "main.2603877e.css.map": "/CPSC-349---Tuffy-Music/static/css/main.2603877e.css.map",
+    "main.cbbeb4ce.js.map": "/CPSC-349---Tuffy-Music/static/js/main.cbbeb4ce.js.map"
   },
   "entrypoints": [
     "static/css/main.2603877e.css",
-    "static/js/main.c1f0726c.js"
+    "static/js/main.cbbeb4ce.js"
   ]
 }
