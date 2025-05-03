@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://peterchauu.github.io/CPSC-349---Tuffy-Music/",
+  "homepage": "https://Peterchauu.github.io/CPSC-349---Tuffy-Music/",
   "dependencies": {
     "firebase": "^11.6.1",
     "react": "^18.2.0",
