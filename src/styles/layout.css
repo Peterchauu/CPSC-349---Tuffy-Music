@@ -1,0 +1,119 @@
+:root {
+  --header-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  --tab-transition: all 0.2s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+
+header img {
+  width: 60px;
+  margin-right: 15px;
+  filter: drop-shadow(var(--header-shadow));
+  transition: transform 0.3s ease;
+}
+
+header img:hover { transform: scale(1.05); }
+
+header h1 {
+  color: var(--primary);
+  margin: 0;
+  font-size: 28px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
+}
+
+.user-controls {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.user-controls button {
+  background: #eee;
+  border: 1px solid var(--border-light);
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: var(--tab-transition);
+}
+
+.user-controls button:hover { background: #e0e0e0; }
+.user-controls span { color: #666; font-size: 14px; }
+
+.tabs {
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  background: #eee;
+  border: none;
+  border-right: 1px solid var(--border-light);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--tab-transition);
+}
+
+.tabs button:last-child { border-right: none; }
+
+.tabs button.active {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tabs button:not(.active):hover { background: #e0e0e0; }
+
+h2 {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.dark header { border-color: var(--border-dark); }
+.dark .user-controls button { background: #444; border-color: var(--border-dark); }
+.dark .user-controls button:hover { background: #555; }
+.dark .user-controls span { color: #aaa; }
+.dark .tabs button { background: #333; border-color: var(--border-dark); color: #eee; }
+.dark .tabs button:not(.active):hover { background: #444; }
+
+@media (max-width: 600px) {
+  .user-controls {
+    position: static;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.user-controls button,
+.tabs button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

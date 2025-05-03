@@ -1,0 +1,109 @@
+:root {
+  --login-bg: #f5f5f5;
+  --error-bg: #ffebee;
+  --error-text: #d32f2f;
+  --btn-width: 90%;
+  --google-height: 36px;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--login-bg);
+}
+
+.login-box {
+  padding: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid var(--border-light);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.login-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.login-box h1 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.login-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.error {
+  background: var(--error-bg);
+  color: var(--error-text);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.login-box input {
+  width: var(--btn-width);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.login-box button {
+  width: var(--btn-width);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.login-button:hover {
+  background: #134888;
+}
+
+.google-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #ccc;
+  height: var(--google-height);
+  padding: 0 15px;
+  width: var(--btn-width);
+  border-radius: 4px;
+}
+
+.google-btn:hover {
+  background: #cfcdcd;
+}
+
+.google-btn img {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -1px;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.switch-btn:hover {
+  color: #134888;
+}
