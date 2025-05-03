@@ -77,7 +77,7 @@
   align-items: center;
   justify-content: center;
   background: white;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   height: var(--google-height);
   padding: 0 15px;
   width: var(--btn-width);
@@ -85,7 +85,7 @@
 }
 
 .google-btn:hover {
-  background: #cfcdcd;
+  background: #e1dfdf;
 }
 
 .google-btn img {
@@ -93,17 +93,15 @@
   height: 18px;
   margin: 0 10px 0 0;
   position: relative;
-  top: -1px;
 }
 
-.switch-btn {
-  background: none;
-  border: none;
-  color: var(--primary);
-  text-decoration: underline;
-  cursor: pointer;
+.switch-mode button {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
 }
 
-.switch-btn:hover {
+.switch-mode button:hover {
+  background-color: #e1dfdf;
   color: #134888;
+  cursor: pointer;
 }
