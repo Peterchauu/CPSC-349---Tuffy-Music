@@ -10,7 +10,7 @@ function Player({ song, onClose }) {
         <h2>{song.title}</h2>
         <h3>{song.artist.name}</h3>
         <audio controls autoPlay src={song.preview}>
-          Your browser does not support audio
+          Your device/browser is unable to play audio, please change environments
         </audio>
       </div>
       <button className="close-btn" onClick={onClose}>×</button>

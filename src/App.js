@@ -12,6 +12,7 @@ function App() {
   const { user, logout } = useAuth();
   const [songs, setSongs] = useState([]);
   const [currentSong, setCurrentSong] = useState(null);
+  // initial search to query into api to have a default appearance with eminem songs
   const [searchTerm, setSearchTerm] = useState('eminem');
   const [recentSongs, setRecentSongs] = useState([]);
   const [playlists, setPlaylists] = useState({});
@@ -77,7 +78,6 @@ function App() {
   }, [user, searchTerm]);
 
   useEffect(() => {
-    // Apply dark mode to body element
     if (isDarkMode) {
       document.body.classList.add('dark');
     } else {
